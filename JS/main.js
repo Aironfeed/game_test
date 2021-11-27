@@ -1,3 +1,7 @@
+import bridge from '@vkontakte/vk-bridge';
+
+// Отправляет событие нативному клиенту на инициализацию приложения
+bridge.send("VKWebAppInit", {});
 const quizData = [
     {
         question: "Год рождения Макса Коржа?",
